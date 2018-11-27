@@ -9,7 +9,7 @@ except ZeroDivisionError:
 finally:
     print("This always executes.")
 
-# Combining "while" loop with "try" and "catch" blocks is possible.
+# "while" loop can be combined with "try" and "catch" blocks is possible.
 a = 0
 b = 2
 
