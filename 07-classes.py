@@ -308,6 +308,6 @@ r1 = Rectangle(10, 20)
 # Getting the "width" value is possible with its properties defined in the last "Rectangle" class.
 print(r1.width)
 
-# Assigning a value will call the "setter" function.
-r1.height = 100
+# Assigning a value will call the function with "@height.setter" property.
+r1.width = 100
 print(r1)
