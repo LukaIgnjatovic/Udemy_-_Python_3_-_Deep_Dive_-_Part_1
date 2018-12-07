@@ -20,9 +20,9 @@ print(hex(id(a)))
 
 print(hex(id(a)))
 
-a = "Hello"
+a = "Hello."
 
-b = "Hello"
+b = "Hello."
 
 print(hex(id(a)))
 
