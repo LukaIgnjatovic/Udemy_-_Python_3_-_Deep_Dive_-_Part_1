@@ -14,7 +14,7 @@ modify_string(my_string)
 # However, final "s" points to another memory location.
 
 # "my_string"'s memory address and value stay the same after calling the "modify_string" function.
-print(id(my_string))
+print(hex(id(my_string)))
 
 print(my_string)
 
@@ -28,13 +28,13 @@ def modify_list(lst):
 
 my_list = [1, 2, 3]
 
-print(id(my_list))
+print(hex(id(my_list)))
 
 modify_list(my_list)
 # By calling "modify_list" on "my_list" shows that "my_list", initial "lst" and final "lst" have the same address.
 
 # "my_list"'s memory address stays the same after calling the "modify_string" function, but its value has changed.
-print(id(my_list))
+print(hex(id(my_list)))
 
 print(my_list)
 
@@ -48,13 +48,13 @@ def modify_tuple(t):
 
 my_tuple = ([1, 2], "a")
 
-print(id(my_tuple))
+print(hex(id(my_tuple)))
 
 modify_tuple(my_tuple)
 # By calling "modify_tuple" on "my_tuple" shows that "my_tuple", initial "t" and final "t" have the same address.
 
 # "my_tuple"'s memory address stays the same after calling the "modify_tuple" function, tuple's values have not changed.
 # However, the values inside tuple have changed.
-print(id(my_tuple))
+print(hex(id(my_tuple)))
 
 print(my_tuple)
