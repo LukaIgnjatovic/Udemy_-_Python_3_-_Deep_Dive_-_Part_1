@@ -74,15 +74,16 @@ def compare_using_interning(n):
             pass
 
 
-# "perf_counter()" method will count the number of milliseconds required for code to execute.
+# "start" is going to store the time when execution has started using "perf_counter()" method from "time" library.
 start = time.perf_counter()
 
-# Running "compare_using_equals" function 10 million times should be long enough to notice the time difference in execution.
+# Function "compare_using_equals" is going to be executed 10 million times as this should take long enough to notice the time difference in execution.
 compare_using_equals(10000000)
 
+# "end" is going to store the time when execution has ended.
 end = time.perf_counter()
 
-# The time required to execute the code is printed, so comparison is easier to perform.
+# Printing the difference between "start" and "end" is going to show how much time was needed to execute "compare_using_equals".
 print("Time needed to execute 10 million loops using \"==\" operator is", end - start, "seconds.")
 
 start = time.perf_counter()
@@ -92,4 +93,4 @@ compare_using_interning(10000000)
 end = time.perf_counter()
 
 print("Time needed to execute 10 million loops using \"is\" operator is", end - start, "seconds.")
-# Interning is much faster, as shown in this example.
+# As expected, interning is much faster.
