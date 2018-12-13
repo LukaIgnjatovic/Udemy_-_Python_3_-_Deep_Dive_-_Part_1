@@ -5,7 +5,7 @@
 # When "a = 10" is executed, Python just has to point to the existing reference for 10.
 # However, when "a = 257" is executed, Python does not use that global list and a new object is created every time.
 # It should be noted that instructor's code in tutorial and code in this script differ in behaviour when referencing numbers outside of singleton range.
-# This is probably due to different versions of Python used in tutorial and here.
+# This is probably due to different versions of Python used in instructor's tutorial and here.
 
 # Creating variables in singleton range will always point to the same memory location.
 a = 10
