@@ -24,7 +24,7 @@ def my_func():
 
 
 # Values of "a", "b" and "c" are pre-calculated and stored in memory since they meet aforementioned requirements.
-my_func.__code__.co_consts
+print(my_func.__code__.co_consts)
 
 # Another type of peephole optimizations are membership tests.
 # This means that mutable structures are replaced by their immutable counterparts.
