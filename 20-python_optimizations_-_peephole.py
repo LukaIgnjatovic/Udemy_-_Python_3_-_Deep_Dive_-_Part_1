@@ -2,7 +2,7 @@
 # For example, constant expressions like numeric calculations that do not contain variables are pre-calculated and stored in memory.
 # Also, short sequences with length less than 20 are treated the same.
 
-# "string" and "time" libraries are required for final examples in this script.
+# "string" and "time" modules are required for final examples in this script.
 import string
 import time
 
