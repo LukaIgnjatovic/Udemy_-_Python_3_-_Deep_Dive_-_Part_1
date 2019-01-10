@@ -7,7 +7,7 @@ import string
 import time
 
 
-# "my_func" is going to check for peephole optimizations at compile time for different variables.
+# "my_func" is going to check for peephole optimizations at compile time for various variable types.
 def my_func():
     # "a" is treated as a constant.
     a = 24 * 60
