@@ -1,0 +1,52 @@
+# "sys" and "time" modules are necessary for this example.
+import sys
+import time
+
+# As previously discussed, everything in Python is an objects. Integers are no exceptions.
+print(type(100))
+
+# "getsizeof()" method from the "sys" module shows how much memory is being used to store a particular object.
+print(sys.getsizeof(0))
+# Value printed (24) is only the overhead, the integer of value 0 does not require any additional bytes.
+
+print(sys.getsizeof(1))
+# Additional 4 bytes (32 bits) are used to store the integer of value 1.
+
+print(sys.getsizeof(2**1000))
+
+
+# "calc" method is going to perform simple multiplication, but many times.
+def calc(a):
+    for i in range(10000000):
+        a * 2
+
+
+# "start" is going to record the exact time when the operation started.
+start = time.perf_counter()
+
+# First number used in the "calc" method is going to be relatively small.
+calc(10)
+
+# "end" is going to record the exact time when the operation ended.
+end = time.perf_counter()
+
+# By subtracting "end" and "start", the time required to execute the "calc" method is going to be printed.
+print(end - start)
+
+start = time.perf_counter()
+
+# Second number used in the "calc" method is going to be a little bigger.
+calc(2**100)
+
+end = time.perf_counter()
+
+print(end - start)
+
+start = time.perf_counter()
+
+# Final number used in the "calc" method is going to be huge.
+calc(2**10000)
+
+end = time.perf_counter()
+
+print(end - start)
