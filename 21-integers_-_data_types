@@ -36,7 +36,7 @@ print(end - start)
 start = time.perf_counter()
 
 # Second number used in the "calc" method is going to be a little bigger.
-calc(2**100)
+calc(2 ** 100)
 
 end = time.perf_counter()
 
@@ -45,7 +45,7 @@ print(end - start)
 start = time.perf_counter()
 
 # Final number used in the "calc" method is going to be huge.
-calc(2**10000)
+calc(2 ** 10000)
 
 end = time.perf_counter()
 
