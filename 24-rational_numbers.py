@@ -56,3 +56,43 @@ y = Fraction(math.sqrt(2))
 print(y)
 
 print(float(y))
+
+# Python "hides" certain stuff under the hood when it comes to storing rational numbers.
+a = 0.125
+
+print(a)
+
+b = 0.3
+
+print(b)
+
+# Everything looks fine, so far. However, when it comes to representing these numbers as fractions, certain things "under the hood" come up.
+print(Fraction(a))
+
+print(Fraction(b))
+
+# This can be demystified. "0.3" is not actually stored as "0.3", but as its approximation.
+print(format(b, "0.5f"))
+
+print(format(b, "0.15f"))
+
+print(format(b, "0.25f"))
+
+# This is why the resulting numbers of "Fraction" class differ from "3" and "10" for value "0.3".
+x = Fraction(0.3)
+
+print(x)
+
+# It is possible to use the "limit_denominator" property to change the output values.
+print(x.limit_denominator(10))
+
+# This works with any number.
+y = Fraction(math.pi)
+
+print(y)
+
+# It is possible to represent the closest value of "pi", but where the denominator cannot be greater than "10".
+print(y.limit_denominator(10))
+
+print(22 / 7)
+# As it can be seen, this value is pretty close to "pi".
