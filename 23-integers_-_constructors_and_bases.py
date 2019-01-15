@@ -1,7 +1,7 @@
 # "fractions" module is going to be needed for some of the exercises in this example.
 import fractions
 
-# Documentation for Integer class can be called upon like this.
+# Documentation for "Integer" class can be called upon like this.
 help(int)
 
 # "int" method has a default value of 0.
