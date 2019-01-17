@@ -1,0 +1,33 @@
+# "trunc", "floor", and "ceil" methods from "math" module are going to be needed for some of the exercises in this example.
+from math import trunc
+from math import floor
+from math import ceil
+
+# "trunc" method truncates the value of a number to its nearest integer.
+help(trunc)
+
+# Its functionality can be seen in the next line of code.
+print(trunc(10.3), trunc(10.5), trunc(10.9))
+
+# "int" constructor uses truncation internally if the number is not an integer.
+print(int(10.4))
+
+# "floor" method returns the floor value of a number, the largest integer less than or equal to an input value.
+help(floor)
+
+# Its functionality can be seen in the next line of code.
+print(floor(10.3), floor(10.5), floor(10.9))
+
+# "trunc" and "floor" methods differ from each other when it comes to negative numbers.
+print(trunc(-10.3), trunc(-10.5), trunc(-10.9))
+
+print(floor(-10.3), floor(-10.5), floor(-10.9))
+
+# "ceil" method returns the ceiling value of a number, the smallest integer greater than or equal to an input value.
+help(ceil)
+
+# Its functionality can be seen in the next line of code.
+print(ceil(10.3), ceil(10.5), ceil(10.9))
+
+# "ceil" method works with negative numbers as well.
+print(ceil(-10.3), ceil(-10.5), ceil(-10.9))
