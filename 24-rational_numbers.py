@@ -91,8 +91,8 @@ y = Fraction(math.pi)
 
 print(y)
 
-# It is possible to represent the closest value of "pi", but where the denominator cannot be greater than "10".
+# It is possible to represent the closest value of pi whose denominator cannot be greater than "10".
 print(y.limit_denominator(10))
 
 print(22 / 7)
-# As it can be seen, this value is pretty close to "pi".
+# As it can be seen, this value is a close approximation of pi.
