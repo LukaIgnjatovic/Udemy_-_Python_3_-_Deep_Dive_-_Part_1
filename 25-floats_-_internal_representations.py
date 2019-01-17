@@ -1,6 +1,5 @@
-# "Fraction" class from "fractions" module and "math" module are going to be needed for some of the exercises in this example.
+# "Fraction" class from "fractions" module is going to be needed for some of the exercises in this example.
 from fractions import Fraction
-import math
 
 # Documentation for "Float" class can be called upon like this.
 help(float)
